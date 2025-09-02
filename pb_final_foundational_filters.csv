@@ -1,0 +1,6 @@
+id,name,enabled,applicable_if,expression,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
+PB_FINAL_RANGE_CORE,"Eliminate if Final-Range NOT in [38,55]",True,,not (38 <= final_range <= 55),,,,,,,,,,
+PB_FINAL_LOWCOUNT_2_3,"Eliminate if Low(1–34) count NOT in [2,3]",True,,not (2 <= final_low_count <= 3),,,,,,,,,,
+PB_FINAL_PARITY_MAJORS,"Eliminate if not in parity majors {3E-2O, 2E-3O}",False,,not ((final_even_count == 3 and final_odd_count == 2) or (final_even_count == 2 and final_odd_count == 3)),,,,,,,,,,
+PB_FINAL_SEED_CARRY_GE1,Eliminate if no carryover from seed numbers (≥1 shared),True,,"(shared_numbers(seed_numbers, combo_numbers) < 1)",,,,,,,,,,
+PB_FINAL_SEED_CARRY_2_3,"Eliminate if carryover NOT in {2,3} (optional center)",False,,"not (shared_numbers(seed_numbers, combo_numbers) in {2,3})",,,,,,,,,,

@@ -1,0 +1,4 @@
+id,name,enabled,applicable_if,expression,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14
+PB_FINAL_KEEP_P10_P90,Eliminate if Final-Sum NOT in P10–P90 (122–221),True,,not (122 <= final_sum <= 221),,,,,,,,,,
+PB_FINAL_KEEP_P20_P80,Eliminate if Final-Sum NOT in P20–P80 (138–208),True,,not (138 <= final_sum <= 208),,,,,,,,,,
+PB_FINAL_KEEP_P30_P70,Eliminate if Final-Sum NOT in P30–P70 (149–194),False,,not (149 <= final_sum <= 194),,,,,,,,,,
